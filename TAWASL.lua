@@ -5,8 +5,8 @@ URL = require('socket.url')
 JSON = require('@dev_mico')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "178744823:AAEsCkFhiu7Ksew48tF3fgLzE4NxjfGfi4I"
-local you = 203189872 --your id
+local bot_api_key = ""
+local you =  --your id
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 
 local nl = [[]]--put any welcome message between [[]]
