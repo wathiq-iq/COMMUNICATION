@@ -3,7 +3,9 @@
 [@mico](www.telegram.me/dev_mico)
 
 # commands
-`It is bot use for tawasul(communication) between to people reported or between admin channel and his user`
+`
+It is bot use for tawasul(communication) between to people reported or between admin channel and his user
+`
 # Installation
 
 ***
