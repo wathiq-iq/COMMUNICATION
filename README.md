@@ -10,7 +10,7 @@
 clone bot
 ***
 ```
-git clone https://github.com/micodev/COMMUNICATION.git && cd COMMUNICATION && ./lua-sec.sh run && ./lua-sec.sh
+git clone https://github.com/micodev/COMMUNICATION.git && cd COMMUNICATION && ./lua.sh run && ./lua.sh
 ```
 
 #Don't forget to put token + your id in TAWASOL.lua
