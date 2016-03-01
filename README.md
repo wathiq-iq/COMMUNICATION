@@ -6,10 +6,16 @@
 `It is bot use for tawasul(communication) between to people reported or between admin channel and his user`
 # Installation
 
-*clone bot*
-`git clone https://github.com/micodev/COMMUNICATION.git && cd COMMUNICATION && ./lua-sec.sh run && ./lua-sec.sh`
+***
+clone bot
+***
+```
+git clone https://github.com/micodev/COMMUNICATION.git && cd COMMUNICATION && ./lua-sec.sh run && ./lua-sec.sh
+```
 
-***Don't forget to put token + your id in TAWASOL.lua ***
+***
+Don't forget to put token + your id in TAWASOL.lua
+***
 
 ```
 local bot_api_key = ""
