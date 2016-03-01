@@ -13,9 +13,8 @@ clone bot
 git clone https://github.com/micodev/COMMUNICATION.git && cd COMMUNICATION && ./lua-sec.sh run && ./lua-sec.sh
 ```
 
-***
-Don't forget to put token + your id in TAWASOL.lua
-***
+#Don't forget to put token + your id in TAWASOL.lua
+
 
 ```
 local bot_api_key = ""
