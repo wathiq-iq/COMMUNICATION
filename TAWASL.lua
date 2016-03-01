@@ -128,7 +128,7 @@ end
 bot_run() -- Run main function
 while is_running do -- Start a loop 
 	local response = getUpdates(last_update+1) -- Get the latest updates using getUpdates method
-	if response and you ~= " " then
+	if response and you ~= nil then
 		for i,v in ipairs(response.result) do
 			last_update = v.update_id
 			msg_processor(v.message)
