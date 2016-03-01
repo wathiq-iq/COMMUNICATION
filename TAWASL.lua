@@ -25,7 +25,7 @@ function is_admin(msg)-- Check if user is admin or not
   end
   return var
 end
---from binding.lua otouto https://github.com/topkecleon/otouto
+
 function sendRequest(url)
   local dat, res = HTTPS.request(url)
   local tab = JSON.decode(dat)
