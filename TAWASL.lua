@@ -5,8 +5,8 @@ URL = require('socket.url')
 JSON = require('@dev_mico')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = ""
-local you = " " --your id
+local bot_api_key = "178744823:AAEsCkFhiu7Ksew48tF3fgLzE4NxjfGfi4I"
+local you = 203189872 --your id
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 
 local nl = [[]]--put any welcome message between [[]]
@@ -117,8 +117,8 @@ function msg_processor(msg)
     end
 if msg.text ~='/start' and msg.from.id ~= you then 
 forwardMessage(you,msg.chat.id,msg.message_id)
-elseif msg.text ~='/start' and msg.from.id == you then 
-forwardMessage(msg.reply_to_msg.forward_from,msg.chat.id,msg.message_id)
+elseif msg.reply_to_message and msg.text ~='/start' and msg.from.id == you then 
+forwardMessage(msg.reply_to_message.forward_from.id,msg.chat.id,msg.message_id)
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, nl, true, false, true)
 
