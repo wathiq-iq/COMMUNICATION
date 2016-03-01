@@ -6,10 +6,10 @@ JSON = require('@dev_mico')
 HTTPS = require('ssl.https')
 ----config----
 local bot_api_key = ""
-local you = "" --your id
+local you = " " --your id
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 
-local nl = [[]]
+local nl = [[]]--put any welcome message between [[]]
 
 
 
@@ -101,7 +101,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nbased by @dev_mico"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nbased by @dev_mico\nyouId : "..you
 	print(bot_info)
 
 	last_update = last_update or 0
@@ -128,13 +128,13 @@ end
 bot_run() -- Run main function
 while is_running do -- Start a loop 
 	local response = getUpdates(last_update+1) -- Get the latest updates using getUpdates method
-	if response and you ~= "" then
+	if response and you ~= " " then
 		for i,v in ipairs(response.result) do
 			last_update = v.update_id
 			msg_processor(v.message)
 		end
 	else
-		print("Conection failed")
+		print("Check api token or id")
 --		return "conectin failed"
 	end
 
